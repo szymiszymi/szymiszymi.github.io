@@ -7,6 +7,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script>
+function displaylightbox(url, options)
+{
+   options.padding = 0;
+   options.autoScale = true;
+   options.href = url;
+   options.type = 'iframe';
+   $.fancybox(options);
+}
+</script>
 </head>
 <body>
 <div id="wb_Image1">
@@ -17,14 +32,16 @@
 <div id="wb_Image3">
 <img src="images/bbb.png" id="Image3" alt=""></div>
 <div id="wb_Image4">
-<a href="<a href="javascript:;" class="fs_gw_15bffc0a"><img src="images/pob.png" id="Image4" alt=""></a></div>
+<script src="https://gw.firesub.pl/15bffc0a.js"></script><a href="javascript:displaylightbox('https://wpisz-to.pl/1482e605',{})" target="_self"><img src="images/pob.png" id="Image4" alt=""></a></div>
 <div id="wb_Image5">
-<a href="<a href="javascript:;" class="fs_gw_15bffc0a"><img src="images/ot.png" id="Image5" alt=""></a></div>
+<a href="javascript:displaylightbox('https://wpisz-to.pl/1482e605',{})" target="_self"><img src="images/ot.png" id="Image5" alt=""></a></div>
 <div id="wb_Image2">
 <a href="https://itunes.apple.com/us/app/gg/id308095268?mt=8"><img src="images/1e.JPG" id="Image2" alt=""></a></div>
 <div id="wb_Image7">
 <a href="https://www.microsoft.com/pl-pl/store/p/stare-gg/9wzdncrfhwdw"><img src="images/3e.JPG" id="Image7" alt=""></a></div>
 <div id="wb_Image6">
 <a href=" https://play.google.com/store/apps/details?id=pl.gadugadu"><img src="images/2e.JPG" id="Image6" alt=""></a></div>
+<div id="Html2">
+</div>
 </body>
 </html>

@@ -122,6 +122,15 @@ body
    height: 94px;
    z-index: 1;
 }
+#Html2
+{
+   position: absolute;
+   left: 41px;
+   top: 1181px;
+   width: 17px;
+   height: 12px;
+   z-index: 8;
+}
 #wb_Image5
 {
    position: absolute;
@@ -220,6 +229,15 @@ body
    top: 1218px;
    width: 44px;
    height: 14px;
+   visibility: visible;
+   display: inline;
+}
+#Html2
+{
+   left: 41px;
+   top: 1181px;
+   width: 17px;
+   height: 12px;
    visibility: visible;
    display: inline;
 }
