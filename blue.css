@@ -41,7 +41,7 @@ body {
 	width: 100%;
 	font-size: 29px;
 	color: #97b8fd;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	font-weight: 700;
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -65,14 +65,14 @@ body {
 	line-height: 28px;
 	font-size: 22px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
     min-height: 420px;
 }
 
 .btnyes {
 	font-size: 30px;
 	color: #FFF;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	width: 100%;
 	min-width: 200px;
 	background:#990000;
@@ -93,7 +93,7 @@ box-shadow: 0 0 5px #FFF;
 .btnno {
 	font-size: 30px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	width: 100%;
 	min-width: 200px;
 	background-color: #aaa;
@@ -110,7 +110,7 @@ box-shadow: 0 0 5px #FFF;
 .btnnext {
 	font-size: 30px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	width: 100%;
 	min-width: 200px;
 	background-color: #6ca655;
@@ -149,7 +149,7 @@ box-shadow: 0 0 5px #FFF;
 	width: 300px;
 	font-size: 22px;
 	color: #666;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	background-color: #fff;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -169,38 +169,38 @@ box-shadow: 0 0 5px #FFF;
 .h1_1 {
 	font-size: 40px;
 	color: #666;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	text-shadow: 1px 1px 1px #fff;
 }
 
 .h1_2 {
 	font-size: 28px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 }
 
 .h1 {
 	font-size: 40px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 }
 
 .style1 {
 	font-size: 20px;
 	color: #97b8fd;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 }
 
 .style2 {
 	font-size: 18px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 }
 
 .styleq1 {
 	font-size: 23px;
 	color: #97b8fd;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	font-weight: 700;
 }
 
@@ -211,7 +211,7 @@ box-shadow: 0 0 5px #FFF;
 .circle1 {
 	font-size: 23px;
 	color: #fff;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	font-weight: 700;
 	background: #97b8fd;
 	border-radius: 3px;
@@ -221,7 +221,7 @@ box-shadow: 0 0 5px #FFF;
 .circle2 {
 	font-size: 23px;
 	color: #888;
-	font-family: 'Open Sans',sans-serif;
+	font-family: Arial;
 	font-weight: 700;
 	background: #ececec;
 	border-radius: 3px;
@@ -285,7 +285,7 @@ box-shadow: 0 0 5px #FFF;
     font-size:12px;
     clear: both;
     position: relative;
-    font-family: 'Open Sans',sans-serif;
+    font-family: Arial;
     margin: 10px auto;
 }
 
