@@ -1,175 +1,101 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FIND YOUR PARTNER</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js"></script>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
-       
-<title>POBIERZ NAGIE ZDJÊCIA</title>
-
-<link rel="stylesheet" type="text/css" href="blue.css">
-<script src="jquery.js" type="text/javascript"></script>
-<script src="showHide.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
-	$("#confirmyes").click(function(){
-        $("#overley").slideUp();
+$("#content").hide();
+$("#confirm").click(function(){
+	$("#overlay").slideUp('500');
+	$("#content").show().slideIn('500');
+});
+
+$(".stepbtn").click(function(){
+	var panel = $(this).attr('id');
+    $(panel).slideUp();
+});
+	
+	$("#step3").click(function(){
+		getprocess();
     });
+	
+	function getprocess(){
+		$("#line1").delay(1000).slideUp('500');
+		$("#line2").delay(2000).slideUp('500');
+		$("#line3").delay(3000).slideUp('500');
+		$("#line4").delay(4000).slideUp('500');
+		$("#content").delay(4500).fadeOut('1000');
+		$("#hideme").delay(5000).show('1000');
+	}
 });
 </script>
 </head>
-
 <body>
-<div id="overley">
-<table width="500" border="0" align="center" cellpadding="5" cellspacing="0">
+<div id="body">
+  <div id="overlay">
+ <h2>You are trying to connect with : Eva004</h2>Her Location : , ES<br>Membership : Active<br>Status : Online<div>Are you invited by her? <br/><br/><a id="confirm">YES, I am invited.</a></div>
+  </div>
+<div id="content" class="banner">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
   <tr>
-    <td>&nbsp;</td>
+    <td><img src="img/sexycouple.jpg" width="100%" /></td>
   </tr>
   <tr>
-    <td align="center"><h1>Masz ukoñczone 18 lat?</h1></td>
-  </tr>
-  <tr>
-    <td align="center">Wymagane potwierdzenie swojego wieku!</td>
-  </tr>
-  <tr>
-    <td align="center">&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="center">&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <table border="0" cellspacing="0" cellpadding="5">
-        <tr>
-          <td><a class="btnyes" href="https://www.google.com/">NIE</a></td>
-          <td><a class="btnno" id="confirmyes">TAK</a></td>
-        </tr>
-      </table>       </td>
+    <td style="background:#4E0A0B;">
+	<div id="sliderpanel">
+	<div id="step1">
+  	<h1>ARE YOU 18+ ?</h1>
+	<a class="stepbtn" id="#step1">NO</a><a class="stepbtn" id="#step1">YES</a>
+  </div>
+  
+  <div id="step2">
+  	<h1>Are you looking for marriage?</h1>
+	<a class="stepbtn" id="#step2">NO</a><a class="stepbtn" id="#step2">YES</a>  </div>
+  <div id="step3">
+  	<h1>Is it OK for you when a lady makes the first move?</h1>
+	<a class="stepbtn" id="#step3">NO</a><a class="stepbtn" id="#step3">YES</a>  </div>
+  <div id="line1"><p id="block_1" class="barlittle"></p>
+<p id="block_2" class="barlittle"></p>
+<p id="block_3" class="barlittle"></p>
+<p id="block_4" class="barlittle"></p>
+<p id="block_5" class="barlittle"></p><br/><b>1. Reviewing your answers</b></div>
+  <div id="line2"><p id="block_1" class="barlittle"></p>
+<p id="block_2" class="barlittle"></p>
+<p id="block_3" class="barlittle"></p>
+<p id="block_4" class="barlittle"></p>
+<p id="block_5" class="barlittle"></p><br/><b>2. Locating matching sex partners</b></div>
+  <div id="line3"><p id="block_1" class="barlittle"></p>
+<p id="block_2" class="barlittle"></p>
+<p id="block_3" class="barlittle"></p>
+<p id="block_4" class="barlittle"></p>
+<p id="block_5" class="barlittle"></p><br/><b>3. Duplicate registrations are being reviewed</b></div>
+  <div id="line4"><p id="block_1" class="barlittle"></p>
+<p id="block_2" class="barlittle"></p>
+<p id="block_3" class="barlittle"></p>
+<p id="block_4" class="barlittle"></p>
+<p id="block_5" class="barlittle"></p><br/><b>4. Looking for free registration options</b></div>
+  </div>
+  </td>
   </tr>
 </table>
-
 </div>
-<div id="body2">
-  <div id="container" align="left"> <div id="q00" class="toggleDiv" style="display: block;" align="center"> <div id="top" align="center"><span class="h1">
-    To  
-    <b>
-      NIE      </b>
-    jest strona do randkowania!
-    </span></div>
-    <div id="box" align="center"><p> <span style="color:#FFCC00"><b>
-      INFO!
-      </b></span>
-      Zobaczysz nagie zdjêcia.Zachowaj to dla siebie!
-      </p><pre><a class="show_hide btnyes shadow" href="javascript:void(0)" rel="#q0">OK</a></pre> </div> </div>
-    
-<div id="q0" class="toggleDiv" style="display: hide;" align="left"> <div id="top" align="center"><span class="h1"><b>
-  Wa¿ne!<br><br>
-  </b>
-  </span> </div> <div id="box"> <span class="styleq2">
-    Zaraz zobaczysz NAGIE zdjêcia
-    <u><b>
-      lecz najpierw</b></u>,
-    muszê Ciê o  spytaæ parê rzeczy.
-    </span></div>
-    <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q1">Kontynuuj»</a></pre> </div> </div>
-    
-<div id="q1" class="toggleDiv" style="display: hide;" align="left"> <div id="top" align="center">
-  Pytanie 
-  <span class="circle1">1</span> <span class="circle2">2</span> <span class="circle2">3</span> <span class="circle2">4</span> </div> <div id="box">
-    <span class="styleq2">
-      Zobaczysz tutaj moje nagie zdjêcia! Obiecasz ¿e zachowasz je dla siebie?</span> </div> <div align="center"> <pre><a class="show_hide btnyes shadow" href="javascript:void(0)" rel="#q2">TAK</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q2">NIE</a></pre> </div> </div>
-    
-<div id="q2" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  Pytanie 
-  <span class="circle2">1</span> <span class="circle1">2</span> <span class="circle2">3</span> <span class="circle2">4</span> </div> <div id="box"> <span class="styleq2">
-    Czy w razie czego jestes gotowy sie spotkaæ?
-    </span></div><div align="center"><pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q3">Tak</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q3">Nie</a></pre> </div> </div>
-    
-<div id="q3" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  Pytanie 
-  <span class="circle2">1</span> <span class="circle2">2</span> <span class="circle1">3</span> <span class="circle2">4</span></div>
-    <div id="box"> <span class="styleq2">
-      Zgadzasz siê na u¿ywanie gumek podczas seksu?
-    </span> <br><br> </div> <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q4">Tak</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q4">Nie</a></pre> </div> </div>
-    
-<div id="q4" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  Pytanie 
-  <span class="circle2">1</span> <span class="circle2">2</span> <span class="circle2">3</span> <span class="circle1">4</span> </div>
-    <div id="box"> <span class="styleq2">
-      Jestes gotowy zobaczyæ zdjecia?
-    </span> </div> <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q5">Tak</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q5">Nie</a></pre></div></div>
-    
-<div id="q5" class="toggleDiv" style="display: none;" align="left"><div id="top" align="center">
-  Jaki typ cia³a Ciê podnieca?
-  </div> <div id="box2"> <span class="style1">
-    (Wybierz maksymalnie 3 odpowiedzi)
-    </span> <p> <span class="styleq2"> <input id="skinny" type="checkbox"> <label for="skinny">
-      Chude
-      </label> <br> <input id="Regular" type="checkbox"> <label for="Regular">
-        Normlane
-        </label> <br> <input id="BBW" type="checkbox"> <label for="BBW">
-          Lekko zaokr¹glone
-          </label> <br> <input id="big" type="checkbox"> <label for="big">
-          Musz¹ byæ du¿e piersi
-          </label> <br> <input id="sexy" type="checkbox"> <label for="sexy">
-          Seksowny ty³ek to koniecznosc
-    </label> <br> </span> </p></div> <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q6">Next »</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q6">Skip »</a></pre> </div> </div>
-    
-<div id="q6" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  W jakiim wieku kobieta najlepiej do ciebie pasuje?
-  </div> <div id="box2"> <span class="style1">
-    (Wybierz maksymalnie 3 odpowiedzi)
-    </span> <p> <span class="styleq2"> <input id="21" type="checkbox"> <label for="21">
-      21 - 25
-      </label><br><input id="25" type="checkbox"> <label for="25">
-        25 - 32
-        </label> <br> <input id="32" type="checkbox"> <label for="32">
-          32 - 37
-          </label> <br> <input id="37" type="checkbox"> <label for="37">
-          37 - 45
-          </label> <br> <input id="45" type="checkbox"> <label for="45">
-          45 and above
-    </label><br></span></p></div> <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q7">Next »</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q7">Skip »</a></pre> </div> </div>
-    
-<div id="q7" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  Jaki typ relacji Ciê interesuje?
-  </div> <div id="box2"> <span class="style1">
-    (Wybierz maksymalnie 3 odpowiedzi)
-    </span> <p> <span class="styleq2"> <input id="one" type="checkbox"> <label for="one">
-      Jednorazowa noc
-      </label> <br> <input id="mult" type="checkbox"> <label for="mult">
-        Seks przy róznych okolicznosciach
-        </label> <br> <input id="regsex" type="checkbox"> <label for="regsex">
-          Zwyk³y seks
-          </label> <br> <input id="Dating" type="checkbox"> <label for="Dating">
-          Radnka
-          </label> <br> <input id="Marriage" type="checkbox"> <label for="Marriage">
-          Spotkanie
-          </label> <br> </span> </p></div>
-    
-<div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q8">Next »</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q8">Skip »</a></pre> </div> </div> <div id="q8" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-  Dystanas miêdzy kobiet¹ a tob¹??
-  </div> <div id="box2"> <span class="style1">
-    (Wybierz maksymalnie 3 odpowiedzi)
-    </span> <p> <span class="styleq2"> <input id="1to5" type="checkbox"> <label for="1to5">
-      1-5 km od Ciebie
-      </label> <br> <input id="same" type="checkbox"> <label for="same">
-        To samo miasto
-        </label> <br> <input id="near" type="checkbox"> <label for="near">
-          Mog¹ byæ pobliskie miasta
-          </label> <br> <input id="country" type="checkbox"> <label for="country">
-          Ten sam kraj
-          </label> <br> <input id="nomatter" type="checkbox"> <label for="nomatter">
-          Nie ma znaczenia
-          </label> <br> </span> </p></div>
-    <div align="center"> <pre><a class="show_hide btnyes" href="javascript:void(0)" rel="#q9">Next »</a></pre> <pre><a class="show_hide btnno" href="javascript:void(0)" rel="#q9">Skip »</a></pre> </div> </div>
-    
- <div id="q9" class="toggleDiv" style="display: none;" align="left"> <div id="top" align="center">
-   Thank You.
-   </div> <div id="box"> <span class="styleq2">
-     Teraz mo¿esz zobaczyæ moje nagie zdjêcia.Ale pamietaj ¿eby zachowaæ je w sekrecie
-     <p>
-    Kliknij przycisk i przejdŸ do strony ze zdjêcami <3</p><p> </p></span></div> <div align="center"> <pre><a class="btnyes" href="http://gg-drive.gq/" rel="#q5">Chcê zdjêcia »</a></pre></div></div>
+</div>
+<div id="hideme">
+  <div>
+    <h2>Before registering please read rules:</h2>
+    <h3 class="rpic">Found  Ladies matching near  (279 are online now)<br><img src="img/-1_5336045_0_1_3.jpg" /><img src="img/-1_5354148_0_1_3.jpg" /><img src="img/207044999Z.jpeg" /><img src="img/5e6988a1-95fa-e411-ae35-18a905616c94.jpeg" /><img src="img/7d1a34ce-8f20-e511-925a-18a905601596.jpeg" /><img src="img/f7f40688-5d5c-e511-80d0-8cdcd4a8eafb.jpeg" />
+
+    </h3>
+    <p>1</p> You confirm that you're interested in a meaningful relationship with an exceptional Lady<br>
+      <p>2</p> Your profile may be removed if one or more Ladies report abusive behavior<br>
+      <p>3</p> Your profile might be removed, if it remains inactive for more than 30 days<br>
+    <br><a class="stepbtn" href="http://bit.ly/adultsite2">I AGREE</a></div>
   </div>
 </div>
-</body></html>
+</body>
+</html>
